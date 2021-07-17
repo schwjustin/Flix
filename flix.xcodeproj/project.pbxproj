@@ -16,7 +16,10 @@
 		0A646067269A51BD0054DDAA /* flixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A646066269A51BD0054DDAA /* flixTests.swift */; };
 		0A646072269A51BD0054DDAA /* flixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A646071269A51BD0054DDAA /* flixUITests.swift */; };
 		0A646080269A58040054DDAA /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A64607F269A58040054DDAA /* MovieCell.swift */; };
-		0A646083269A59E30054DDAA /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0A646082269A59E30054DDAA /* AlamofireImage */; };
+		0AECD16E26A272780076BA13 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AECD16D26A272780076BA13 /* MovieDetailsViewController.swift */; };
+		0AECD17126A273680076BA13 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0AECD17026A273680076BA13 /* AlamofireImage */; };
+		0AECD17326A27FDE0076BA13 /* MovieGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AECD17226A27FDE0076BA13 /* MovieGridViewController.swift */; };
+		0AECD17726A281CB0076BA13 /* MovieGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AECD17626A281CB0076BA13 /* MovieGridCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		0A646071269A51BD0054DDAA /* flixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flixUITests.swift; sourceTree = "<group>"; };
 		0A646073269A51BD0054DDAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A64607F269A58040054DDAA /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		0AECD16D26A272780076BA13 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		0AECD17226A27FDE0076BA13 /* MovieGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridViewController.swift; sourceTree = "<group>"; };
+		0AECD17626A281CB0076BA13 /* MovieGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A646083269A59E30054DDAA /* AlamofireImage in Frameworks */,
+				0AECD17126A273680076BA13 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,12 +111,15 @@
 			children = (
 				0A64604F269A51BA0054DDAA /* AppDelegate.swift */,
 				0A646051269A51BA0054DDAA /* SceneDelegate.swift */,
-				0A646053269A51BA0054DDAA /* MoviesViewController.swift */,
 				0A646055269A51BA0054DDAA /* Main.storyboard */,
 				0A64607F269A58040054DDAA /* MovieCell.swift */,
 				0A646058269A51BD0054DDAA /* Assets.xcassets */,
 				0A64605A269A51BD0054DDAA /* LaunchScreen.storyboard */,
 				0A64605D269A51BD0054DDAA /* Info.plist */,
+				0A646053269A51BA0054DDAA /* MoviesViewController.swift */,
+				0AECD16D26A272780076BA13 /* MovieDetailsViewController.swift */,
+				0AECD17226A27FDE0076BA13 /* MovieGridViewController.swift */,
+				0AECD17626A281CB0076BA13 /* MovieGridCell.swift */,
 			);
 			path = flix;
 			sourceTree = "<group>";
@@ -150,7 +159,7 @@
 			);
 			name = flix;
 			packageProductDependencies = (
-				0A646082269A59E30054DDAA /* AlamofireImage */,
+				0AECD17026A273680076BA13 /* AlamofireImage */,
 			);
 			productName = flix;
 			productReference = 0A64604C269A51BA0054DDAA /* flix.app */;
@@ -224,7 +233,7 @@
 			);
 			mainGroup = 0A646043269A51BA0054DDAA;
 			packageReferences = (
-				0A646081269A59E30054DDAA /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+				0AECD16F26A273680076BA13 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = 0A64604D269A51BA0054DDAA /* Products */;
 			projectDirPath = "";
@@ -269,10 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AECD16E26A272780076BA13 /* MovieDetailsViewController.swift in Sources */,
 				0A646054269A51BA0054DDAA /* MoviesViewController.swift in Sources */,
 				0A646050269A51BA0054DDAA /* AppDelegate.swift in Sources */,
 				0A646080269A58040054DDAA /* MovieCell.swift in Sources */,
 				0A646052269A51BA0054DDAA /* SceneDelegate.swift in Sources */,
+				0AECD17326A27FDE0076BA13 /* MovieGridViewController.swift in Sources */,
+				0AECD17726A281CB0076BA13 /* MovieGridCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +390,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -433,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -607,7 +619,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0A646081269A59E30054DDAA /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+		0AECD16F26A273680076BA13 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
 			requirement = {
@@ -618,9 +630,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0A646082269A59E30054DDAA /* AlamofireImage */ = {
+		0AECD17026A273680076BA13 /* AlamofireImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0A646081269A59E30054DDAA /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			package = 0AECD16F26A273680076BA13 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
 			productName = AlamofireImage;
 		};
 /* End XCSwiftPackageProductDependency section */
